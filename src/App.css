@@ -1,0 +1,55 @@
+body {
+	background: #0b08b1;
+	color: #ffffff;
+  width: 1700px;
+  height: 230px; 
+	overflow: hidden; 
+	overflow-y: hidden; /* Hide vertical scrollbar */
+	overflow-x: hidden;
+  }
+.movie-app > .row {
+	overflow-x: auto;
+	flex-wrap: nowrap;
+}
+
+.image-container 
+{
+  	position: relative;
+	  transition: transform 0.1s;
+}
+
+.image-container:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+.form-control
+{
+   border-bottom: 3px solid black;
+   color: black;
+   background: transparent;
+}
+.image-container:hover .overlay {
+	opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+button
+{
+  border: 0px solid #fcf8f8;
+  background: transparent;
+  color: rgb(255, 255, 255);
+}
+button:hover
+{
+  color: rgb(19, 46, 218);
+}
